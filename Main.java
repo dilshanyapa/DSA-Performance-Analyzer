@@ -25,13 +25,13 @@ public class Main {
     // STATUS FLAGS: Change to 'true' once respective members finish their logic
     private static final boolean IS_STACK_READY = false;       // Set to true by Member 2
     private static final boolean IS_QUEUE_READY = false;       // Set to true by Member 2
-    private static final boolean IS_LINKED_LIST_READY = false; // Set to true by Member 3
+    private static final boolean IS_LINKED_LIST_READY = true; // Set to true by Member 3
     private static final boolean IS_GRAPH_READY = false;       // Set to true by Member 4
 
     // Teammate classes: Uncomment when members push their class files
     // private static CustomStack stackComponent = new CustomStack(10);
     // private static CustomQueue queueComponent = new CustomQueue(10);
-    // private static CustomLinkedList linkedListComponent = new CustomLinkedList();
+    private static CustomLinkedList linkedListComponent = new CustomLinkedList();
     // private static Graph graphComponent = new Graph();
 
     public static void main(String[] args) {
@@ -250,16 +250,24 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    // TODO: MEMBER 3 - Write Insert logic here[cite: 3]
+                    int valToInsert = readIntegerInput("Enter integer to insert: ");
+                    linkedListComponent.insert(valToInsert);
                     break;
                 case 2:
-                    // TODO: MEMBER 3 - Write Delete logic here[cite: 3]
+                    int valToDelete = readIntegerInput("Enter integer to delete: ");
+                    linkedListComponent.delete(valToDelete);                    
                     break;
                 case 3:
-                    // TODO: MEMBER 3 - Write Search logic here[cite: 3]
+                    int valToSearch = readIntegerInput("Enter integer to search: ");
+                    int foundIndex = linkedListComponent.search(valToSearch);
+                    if (foundIndex != -1) {
+                        System.out.println("[Result] Element " + valToSearch + " found at position " + foundIndex);
+                    } else {
+                        System.out.println("[Result] Element " + valToSearch + " not found in list.");
+                    }
                     break;
                 case 4:
-                    // TODO: MEMBER 3 - Write Display logic here[cite: 3]
+                    linkedListComponent.display();
                     break;
                 case 5:
                     inListMenu = false;
@@ -399,10 +407,11 @@ public class Main {
 
         System.out.println("\n[4] Linked List Component (Member 3):");
         if (IS_LINKED_LIST_READY) {
-            // linkedListComponent.display();
+            linkedListComponent.display();
         } else {
             System.out.println("Pending Member 3 implementation.");
         }
+
 
         System.out.println("\n[5] Graph Component (Member 4):");
         if (IS_GRAPH_READY) {
