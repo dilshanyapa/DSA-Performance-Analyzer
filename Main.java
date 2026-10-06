@@ -23,14 +23,14 @@ public class Main {
     private static final CustomArray arrayComponent = new CustomArray(20);
 
     // STATUS FLAGS: Change to 'true' once respective members finish their logic
-    private static final boolean IS_STACK_READY = false;       // Set to true by Member 2
-    private static final boolean IS_QUEUE_READY = false;       // Set to true by Member 2
+    private static final boolean IS_STACK_READY = true;       // Set to true by Member 2
+    private static final boolean IS_QUEUE_READY = true;       // Set to true by Member 2
     private static final boolean IS_LINKED_LIST_READY = true; // Set to true by Member 3
     private static final boolean IS_GRAPH_READY = true;       // Set to true by Member 4
 
     // Teammate classes: Uncomment when members push their class files
-    // private static CustomStack stackComponent = new CustomStack(10);
-    // private static CustomQueue queueComponent = new CustomQueue(10);
+    private static CustomStack stackComponent = new CustomStack(10);
+    private static CustomQueue queueComponent = new CustomQueue(10);
     private static CustomLinkedList linkedListComponent = new CustomLinkedList();
     private static Graph graphComponent = new Graph();
 
@@ -164,16 +164,17 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    // TODO: MEMBER 2 - Write Push logic here[cite: 3]
+                    int pushVal = readIntegerInput("Enter integer to push: ");
+                    stackComponent.push(pushVal);
                     break;
                 case 2:
-                    // TODO: MEMBER 2 - Write Pop logic here[cite: 3]
+                    stackComponent.pop();
                     break;
                 case 3:
-                    // TODO: MEMBER 2 - Write Peek logic here[cite: 3]
+                    stackComponent.peek();
                     break;
                 case 4:
-                    // TODO: MEMBER 2 - Write Display logic here[cite: 3]
+                    stackComponent.display();
                     break;
                 case 5:
                     inStackMenu = false;
@@ -207,16 +208,16 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    // TODO: MEMBER 2 - Write Enqueue logic here[cite: 3]
+                    int enqueueVal = readIntegerInput("Enter integer to enqueue: ");
+                    queueComponent.enqueue(enqueueVal);
                     break;
                 case 2:
-                    // TODO: MEMBER 2 - Write Dequeue logic here[cite: 3]
-                    break;
+                    queueComponent.dequeue();
                 case 3:
-                    // TODO: MEMBER 2 - Write Peek logic here[cite: 3]
+                    queueComponent.peek();
                     break;
                 case 4:
-                    // TODO: MEMBER 2 - Write Display logic here[cite: 3]
+                    queueComponent.display();
                     break;
                 case 5:
                     inQueueMenu = false;
