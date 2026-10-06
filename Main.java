@@ -26,13 +26,13 @@ public class Main {
     private static final boolean IS_STACK_READY = false;       // Set to true by Member 2
     private static final boolean IS_QUEUE_READY = false;       // Set to true by Member 2
     private static final boolean IS_LINKED_LIST_READY = true; // Set to true by Member 3
-    private static final boolean IS_GRAPH_READY = false;       // Set to true by Member 4
+    private static final boolean IS_GRAPH_READY = true;       // Set to true by Member 4
 
     // Teammate classes: Uncomment when members push their class files
     // private static CustomStack stackComponent = new CustomStack(10);
     // private static CustomQueue queueComponent = new CustomQueue(10);
     private static CustomLinkedList linkedListComponent = new CustomLinkedList();
-    // private static Graph graphComponent = new Graph();
+    private static Graph graphComponent = new Graph();
 
     public static void main(String[] args) {
         boolean running = true;
@@ -336,19 +336,34 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    // TODO: MEMBER 4 - Write Add Vertex logic here
+                    // MEMBER 4 - Add Vertex logic here
+                    System.out.print("Enter vertex name: ");
+                    String vertexName = scanner.nextLine().trim();
+                    graphComponent.addVertex(vertexName);
                     break;
                 case 2:
-                    // TODO: MEMBER 4 - Write Add Edge logic here[cite: 3]
+                    // MEMBER 4 - Add Edge logic here[cite: 3]
+                    System.out.print("Enter first vertex: ");
+                    String edgeA = scanner.nextLine().trim();
+                    System.out.print("Enter second vertex: ");
+                    String edgeB = scanner.nextLine().trim();
+                    graphComponent.addEdge(edgeA, edgeB);
                     break;
                 case 3:
-                    // TODO: MEMBER 4 - Write Display Graph logic here[cite: 3]
+                    // MEMBER 4 - Display Graph logic here[cite: 3]
+                    graphComponent.displayGraph();
                     break;
                 case 4:
-                    // TODO: MEMBER 4 - Write BFS Traversal logic here[cite: 3]
+                    // MEMBER 4 - BFS Traversal logic here[cite: 3]
+                    System.out.print("Enter starting vertex for BFS: ");
+                    String bfsStart = scanner.nextLine().trim();
+                    graphComponent.traverseBFS(bfsStart);
                     break;
                 case 5:
-                    // TODO: MEMBER 4 - Write DFS Traversal logic here[cite: 3]
+                    // MEMBER 4 - DFS Traversal logic here[cite: 3]
+                    System.out.print("Enter starting vertex for DFS: ");
+                    String dfsStart = scanner.nextLine().trim();
+                    graphComponent.traverseDFS(dfsStart);
                     break;
                 case 6:
                     inGraphMenu = false;
