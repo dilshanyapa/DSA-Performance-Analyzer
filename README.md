@@ -47,8 +47,8 @@ CIT300-DSA-Performance-Analyzer/
 2. **Stack Operations:** LIFO structure with underflow protection during empty pop/peek attempts.
 3. **Queue Operations:** FIFO structure with underflow protection during empty dequeue/peek attempts.
 4. **Linked List:** Dynamic singly linked list supporting node insertion, deletion, lookup, and traversal.
-5. **Searching Algorithms:** Comparative step-tracking for Linear Search ($\mathcal{O}(n)$) vs. Binary Search ($\mathcal{O}(\log n)$).
-6. **Graph Traversals:** Graph vertex/edge mapping with Breadth-First Search (BFS) and Depth-First Search (DFS) traversals ($\mathcal{O}(V + E)$).
+5. **Searching Algorithms:** Comparative step-tracking for Linear Search **O(n)** vs. Binary Search **O(log n)**.
+6. **Graph Traversals:** Graph vertex/edge mapping with Breadth-First Search (BFS) and Depth-First Search (DFS) traversals **O(V + E)**.
 7. **Performance Benchmark:** Formatted step-count and execution time analysis comparing algorithms.
 8. **State Persistence:** Ability to view all populated data structures simultaneously via Option 8.
 
