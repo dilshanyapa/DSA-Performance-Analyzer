@@ -28,18 +28,17 @@ This repository contains a unified, console-based Java application designed to i
 ## 🏗️ System Architecture & File Structure
 
 ```text
-CIT300-DSA-Performance-Analyzer/
-├── README.md                      # Comprehensive project documentation
-└── src/
-    ├── Main.java                  # Master controller, menu router & input validation
-    ├── CustomArray.java           # Fixed-size bounded array structure
-    ├── SearchAnalyzer.java        # Linear Search & Binary Search step analyzers
-    ├── PerformanceAnalyzer.java   # Comparison reporting & formatting engine
-    ├── CustomStack.java           # LIFO stack engine with underflow safeguards
-    ├── CustomQueue.java           # FIFO queue engine with underflow safeguards
-    ├── Node.java                  # Dynamic singly-linked node representation
-    ├── CustomLinkedList.java      # Linked chain insertion, search, and deletion
-    └── Graph.java                 # Graph topology with BFS & DFS traversal routines
+DSA-Performance-Analyzer/
+├── README.md                  # Comprehensive project documentation
+├── Main.java                  # Master controller, menu router & input validation
+├── CustomArray.java           # Fixed-size bounded array structure
+├── SearchAnalyzer.java        # Linear Search & Binary Search step analyzers
+├── PerformanceAnalyzer.java   # Comparison reporting & formatting engine
+├── CustomStack.java           # LIFO stack engine with underflow safeguards
+├── CustomQueue.java           # FIFO queue engine with underflow safeguards
+├── Node.java                  # Dynamic singly-linked node representation
+├── CustomLinkedList.java      # Linked chain insertion, search, and deletion
+└── Graph.java                 # Graph topology with BFS & DFS traversal routines
 ```
 ## 🎯 Key Features & Modules
 
