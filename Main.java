@@ -2,15 +2,15 @@ import java.util.Scanner;
 
 /**
  * ============================================================================
- * CIT300 - Data Structures and Algorithms
- * Graded Practical Assignment 2: Data Structure and Graph Performance Analyzer[cite: 2]
+ * CIT300 - Data Structures and Algorithms TEAM 49
+ * Graded Practical Assignment 2: Data Structure and Graph Performance Analyzer
  * ============================================================================
  * 
  * Team Responsibilities:
- * - Lead / Member 1: Main Integration, Array Operations, Searching, Performance Comparison[cite: 5, 6]
- * - Member 2: Stack & Queue Operations[cite: 5]
- * - Member 3: Linked List Operations[cite: 5]
- * - Member 4: Graph Operations & Traversals (BFS, DFS)[cite: 6]
+ * - Member 1(23DA2-0236): Main Integration, Array Operations, Searching, Performance Comparison
+ * - Member 2(23DA2-0238): Stack & Queue Operations
+ * - Member 3(23DA2-0041): Linked List Operations
+ * - Member 4(23DA2-0101): Graph Operations & Traversals (BFS, DFS)
  */
 public class Main {
 
@@ -19,7 +19,7 @@ public class Main {
     // ============================================================================
     // COMPONENT INSTANCES
     // ============================================================================
-    // Member 1 Components (Array is ready and active)[cite: 2, 5]
+    // Member 1 Components 
     private static final CustomArray arrayComponent = new CustomArray(20);
 
     // STATUS FLAGS: Change to 'true' once respective members finish their logic
@@ -337,13 +337,11 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    // MEMBER 4 - Add Vertex logic here
                     System.out.print("Enter vertex name: ");
                     String vertexName = scanner.nextLine().trim();
                     graphComponent.addVertex(vertexName);
                     break;
                 case 2:
-                    // MEMBER 4 - Add Edge logic here[cite: 3]
                     System.out.print("Enter first vertex: ");
                     String edgeA = scanner.nextLine().trim();
                     System.out.print("Enter second vertex: ");
@@ -351,17 +349,14 @@ public class Main {
                     graphComponent.addEdge(edgeA, edgeB);
                     break;
                 case 3:
-                    // MEMBER 4 - Display Graph logic here[cite: 3]
                     graphComponent.displayGraph();
                     break;
                 case 4:
-                    // MEMBER 4 - BFS Traversal logic here[cite: 3]
                     System.out.print("Enter starting vertex for BFS: ");
                     String bfsStart = scanner.nextLine().trim();
                     graphComponent.traverseBFS(bfsStart);
                     break;
                 case 5:
-                    // MEMBER 4 - DFS Traversal logic here[cite: 3]
                     System.out.print("Enter starting vertex for DFS: ");
                     String dfsStart = scanner.nextLine().trim();
                     graphComponent.traverseDFS(dfsStart);

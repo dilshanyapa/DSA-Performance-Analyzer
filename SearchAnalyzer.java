@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-// Class to perform searching and count the steps taken[cite: 3, 4]
+// Class to perform searching and count the steps taken
 public class SearchAnalyzer {
 
     // Simple container to hold search results

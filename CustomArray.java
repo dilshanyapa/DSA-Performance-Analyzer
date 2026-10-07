@@ -1,10 +1,9 @@
-// Custom class to handle basic Array operations[cite: 2]
+// Custom class to handle basic Array operations
 public class CustomArray {
     private int[] arr;
     private int size;
     private int capacity;
 
-    // Constructor to set array capacity
     public CustomArray(int capacity) {
         this.capacity = capacity;
         this.arr = new int[capacity];
@@ -52,7 +51,7 @@ public class CustomArray {
         return -1;
     }
 
-    // 4. Display all array elements[cite: 2]
+    // 4. Display all array elements
     public void display() {
         if (size == 0) {
             System.out.println("Array is empty.");
